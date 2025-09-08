@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #111;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      display: none; /* hide all by default */
+    }
+
+    /* Small screens (phones) */
+    @media (max-width: 767px) {
+      .img-sm { display: block; }
+    }
+
+    /* Medium screens (tablets) */
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .img-md { display: block; }
+    }
+
+    /* Large screens (desktops) */
+    @media (min-width: 1024px) {
+      .img-lg { display: block; }
+    }
+  </style>
+</head>
+<body>
+  <!-- Replace these with your actual image names -->
+  <img src="https://mayfairs-banners.s3.eu-north-1.amazonaws.com/mayfair1.jpg" alt="Large Screen Banner" class="img-lg">
+  <img src="https://mayfairs-banners.s3.eu-north-1.amazonaws.com/mayfair2.jpg" alt="Medium Screen Banner" class="img-md">
+  <img src="https://mayfairs-banners.s3.eu-north-1.amazonaws.com/mayfair3.jpg" alt="Small Screen Banner" class="img-sm">
+</body>
+</html>
